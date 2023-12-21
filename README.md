@@ -43,13 +43,13 @@
 * 오브젝트가 반복적으로 생성, 파괴되는 것을 방지.
 * [LINK](https://github.com/kyj0701/ForgeCraft_Scripts/blob/main/Scripts/ObjectPool.cs)
 
-### Corutine 최적화를 위해 Corutine Helper 구현
+### Coroutine 최적화를 위해 Coroutine Helper 구현
 
 * 코루틴 활용 시, 서브 루틴의 지연을 주기 위해 new WaitForSeconds()를 통해 WaitForSeconds를 생성.
 * 생성된 WaitForSeconds는 결국 가비지를 발생시키기 때문에 서브 루틴이 실행될 때마다 가비지가 발생.
 * 가지비 컬렉터가 호출되어 성능 저하를 유발.
 * 시간(float)을 key, WaitForSeconds를 value로 갖는 딕셔너리에 저장하고 불러오면서 사용함으로써 가비지의 발생을 줄여 성능 저하를 방지.
-* [LINK](https://github.com/kyj0701/ForgeCraft_Scripts/blob/main/Scripts/CorutineHelper.cs)
+* [LINK](https://github.com/kyj0701/ForgeCraft_Scripts/blob/main/Scripts/CoroutineHelper.cs)
 
 ### StringBuilder로 문자열 인스턴스 반복 생성 방지
 
